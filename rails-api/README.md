@@ -8,7 +8,7 @@ Rails 5 のAPI Onlyアプリケーションで作成する
 http://edgeguides.rubyonrails.org/api_app.html
 
 ```
-rails new server --api -TB -d postgresql
+rails new rails-api --api -TB -d postgresql
 ```
 
 ### モデル構造
