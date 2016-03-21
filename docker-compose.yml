@@ -8,5 +8,14 @@ services:
       - go-api
   go-api:
     build: go-api
-    ports:
-      - 8000:8000
+  rails-api:
+    build: rails-api
+    depends_on:
+      - postgres
+    env_file: rails-api/.env
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: rails-api
+      POSTGRES_DB: rails-api_production
+    env_file: rails-api/.env

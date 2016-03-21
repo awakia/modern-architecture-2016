@@ -82,4 +82,4 @@ production:
   <<: *default
   database: rails-api_production
   username: rails-api
-  password: <%= ENV['RAILS-API_DATABASE_PASSWORD'] %>
+  password: <%= ENV['RAILS_API_DATABASE_PASSWORD'] %>
