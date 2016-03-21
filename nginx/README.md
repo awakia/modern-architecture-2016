@@ -6,5 +6,5 @@
 
 | サーバーの言語 | デフォルトのURL | Nginx経由のURL |
 |--|--|--|
-| rails-api | http://localhost:3000 | http://localhost:8080/api/rails |
-| go-api | http://localhost:8000 | http://localhost:8080/api/go |
+| rails-api | http://localhost:3000 | http://localhost/api/rails |
+| go-api | http://localhost:8000 | http://localhost/api/go |

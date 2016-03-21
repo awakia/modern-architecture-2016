@@ -1,0 +1,12 @@
+version: '2'
+services:
+  nginx:
+    build: nginx
+    ports:
+      - 80:80
+    links:
+      - go-api
+  go-api:
+    build: go-api
+    ports:
+      - 8000:8000
