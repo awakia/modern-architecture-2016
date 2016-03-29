@@ -6,9 +6,12 @@ ENV RAILS_ENV production
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-COPY . /usr/src/app
+COPY Gemfile /usr/src/app/
+COPY Gemfile.lock /usr/src/app/
 
-RUN bundle install --path vendor/bundle -j4
+RUN bundle install -j4
+
+COPY . /usr/src/app
 
 ENV TZ Asia/Tokyo
 
