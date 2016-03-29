@@ -17,6 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  host: localhost
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -82,4 +83,5 @@ production:
   <<: *default
   database: rails-api_production
   username: rails-api
+  host: postgres
   password: <%= ENV['RAILS_API_DATABASE_PASSWORD'] %>
