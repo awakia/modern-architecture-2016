@@ -6,6 +6,7 @@ services:
       - 80:80
     links:
       - go-api
+      - rails-api
   go-api:
     build: go-api
     ports:
