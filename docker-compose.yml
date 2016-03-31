@@ -4,6 +4,9 @@ services:
     image: mashape/kong
     depends_on:
       - cassandra
+    links:
+      - go-api
+      - rails-api
     ports:
       - 8000:8000
       - 8443:8443
